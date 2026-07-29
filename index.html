@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Preverite, ali je toplotna črpalka smiselna za vaš dom, katere dejavnike morate preveriti in kako se pripraviti na ponudbe izvajalcev." />
+  <title>EnergoIzbira — Pametnejša odločitev za energijsko prenovo doma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="EnergoIzbira domov">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>EnergoIzbira</span>
+    </a>
+    <nav aria-label="Glavna navigacija">
+      <a href="#kako-deluje">Kako deluje</a>
+      <a href="#ocena">Ocena doma</a>
+      <a href="#izvajalci">Za izvajalce</a>
+    </nav>
+    <a class="button button-small" href="#ocena">Preveri svoj dom</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Neodvisna začetna usmeritev za lastnike hiš</p>
+        <h1>Je toplotna črpalka prava izbira za vaš dom?</h1>
+        <p class="hero-lead">V nekaj minutah preverite ključne pogoje, odkrijte morebitne ovire in se bolje pripravite na pogovor z izvajalci.</p>
+        <div class="hero-actions">
+          <a class="button" href="#ocena">Začni brezplačno oceno</a>
+          <a class="text-link" href="#kako-deluje">Kako deluje <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="trust-row" aria-label="Prednosti">
+          <span>Brez obveznosti</span>
+          <span>Brez izbire znamke</span>
+          <span>Rezultat v nekaj minutah</span>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Primer rezultata ocene">
+        <div class="card-topline"><span>Predhodna ocena</span><span class="status-dot">Obetavno</span></div>
+        <div class="score-ring"><span>82</span><small>/ 100</small></div>
+        <h2>Vaš dom ima dobre izhodiščne pogoje.</h2>
+        <ul>
+          <li>Delna izolacija stavbe</li>
+          <li>Radiatorsko ogrevanje zahteva preverbo temperature</li>
+          <li>Možna zamenjava kurilnega olja</li>
+        </ul>
+        <p class="card-note">Končno rešitev mora po ogledu potrditi usposobljen strokovnjak.</p>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div><strong>1</strong><span>strukturirana ocena</span></div>
+      <div><strong>3</strong><span>največ primerni izvajalci</span></div>
+      <div><strong>0 €</strong><span>za lastnika doma</span></div>
+    </section>
+
+    <section id="kako-deluje" class="content-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Od vprašanj do naslednjega koraka</p>
+        <h2>Najprej razumevanje. Nato ponudbe.</h2>
+        <p>Ne pošljemo le telefonske številke več podjetjem. Najprej zberemo podatke, ki pomagajo razumeti vaš dom in pripravljenost projekta.</p>
+      </div>
+      <div class="steps-grid">
+        <article><span>01</span><h3>Opišete svoj dom</h3><p>Velikost, leto gradnje, ogrevanje, izolacija, okna in način oddajanja toplote.</p></article>
+        <article><span>02</span><h3>Prejmete začetno oceno</h3><p>Prikažemo prednosti, možne ovire in vprašanja, ki jih morate postaviti izvajalcu.</p></article>
+        <article><span>03</span><h3>Izberete naslednji korak</h3><p>Rezultat lahko obdržite zase ali zaprosite za stik z največ tremi ustreznimi izvajalci.</p></article>
+      </div>
+    </section>
+
+    <section class="value-section">
+      <div class="section-shell value-grid">
+        <div>
+          <p class="eyebrow">Zakaj EnergoIzbira</p>
+          <h2>Manj ugibanja pred veliko investicijo.</h2>
+        </div>
+        <div class="value-list">
+          <article><h3>Odločitev brez pritiska</h3><p>Oceno dobite še preden se odločite za pogovor s ponudniki.</p></article>
+          <article><h3>Bolj pripravljeno povpraševanje</h3><p>Izvajalec že pred stikom pozna glavne podatke o objektu in vašem načrtu.</p></article>
+          <article><h3>Jasna omejitev odgovornosti</h3><p>Rezultat je začetna usmeritev, ne projektna dokumentacija ali zagotovilo o prihrankih.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ocena" class="assessment-section section-shell">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Brezplačna predhodna ocena</p>
+        <h2>Preverite izhodiščne pogoje svojega doma</h2>
+        <p>Izpolnjevanje traja približno tri minute. Za prikaz rezultata kontaktni podatki niso potrebni.</p>
+      </div>
+
+      <div class="assessment-layout">
+        <aside class="progress-card" aria-label="Napredek vprašalnika">
+          <p>Vaš napredek</p>
+          <div class="progress-track"><span id="progressBar"></span></div>
+          <ol id="stepList">
+            <li class="active">Nepremičnina</li>
+            <li>Ogrevanje</li>
+            <li>Stanje doma</li>
+            <li>Načrt investicije</li>
+          </ol>
+        </aside>
+
+        <form id="assessmentForm" class="assessment-card" novalidate>
+          <section class="form-step active" data-step="0">
+            <p class="step-label">1. korak od 4</p>
+            <h3>Osnovni podatki o nepremičnini</h3>
+            <div class="field-grid">
+              <label>Poštna številka
+                <input name="postcode" inputmode="numeric" maxlength="4" placeholder="npr. 8250" required />
+              </label>
+              <label>Vrsta nepremičnine
+                <select name="propertyType" required>
+                  <option value="">Izberite</option>
+                  <option value="detached">Samostojna hiša</option>
+                  <option value="semi">Dvojček</option>
+                  <option value="row">Vrstna hiša</option>
+                  <option value="apartment">Stanovanje</option>
+                </select>
+              </label>
+              <label>Leto oziroma obdobje gradnje
+                <select name="buildYear" required>
+                  <option value="">Izberite</option>
+                  <option value="pre1970">Pred 1970</option>
+                  <option value="1970to1990">1970–1990</option>
+                  <option value="1991to2010">1991–2010</option>
+                  <option value="after2010">Po 2010</option>
+                </select>
+              </label>
+              <label>Ogrevana površina
+                <select name="area" required>
+                  <option value="">Izberite</option>
+                  <option value="under100">Do 100 m²</option>
+                  <option value="100to150">100–150 m²</option>
+                  <option value="150to200">150–200 m²</option>
+                  <option value="over200">Več kot 200 m²</option>
+                </select>
+              </label>
+              <label>Vaše razmerje do nepremičnine
+                <select name="ownership" required>
+                  <option value="">Izberite</option>
+                  <option value="owner">Sem lastnik/-ca</option>
+                  <option value="coowner">Sem solastnik/-ca</option>
+                  <option value="family">Odločam skupaj z družino</option>
+                  <option value="other">Drugo</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="1">
+            <p class="step-label">2. korak od 4</p>
+            <h3>Trenutni ogrevalni sistem</h3>
+            <div class="field-grid">
+              <label>Glavni vir ogrevanja
+                <select name="heatingSource" required>
+                  <option value="">Izberite</option>
+                  <option value="oil">Kurilno olje</option>
+                  <option value="gas">Zemeljski ali utekočinjeni plin</option>
+                  <option value="wood">Drva, peleti ali druga biomasa</option>
+                  <option value="electric">Električni grelci ali električna peč</option>
+                  <option value="district">Daljinsko ogrevanje</option>
+                  <option value="other">Drugo</option>
+                </select>
+              </label>
+              <label>Oddajanje toplote
+                <select name="emitters" required>
+                  <option value="">Izberite</option>
+                  <option value="floor">Talno ogrevanje</option>
+                  <option value="lowtemp">Nizkotemperaturni radiatorji</option>
+                  <option value="radiators">Klasični radiatorji</option>
+                  <option value="mixed">Kombinacija</option>
+                </select>
+              </label>
+              <label>Ogrevanje sanitarne vode
+                <select name="hotWater" required>
+                  <option value="">Izberite</option>
+                  <option value="same">Z istim ogrevalnim sistemom</option>
+                  <option value="boiler">Električni bojler</option>
+                  <option value="solar">Solarno ali drugo</option>
+                  <option value="unknown">Ne vem</option>
+                </select>
+              </label>
+              <label>Približen letni strošek ogrevanja
+                <select name="annualCost">
+                  <option value="unknown">Ne vem / ne želim navesti</option>
+                  <option value="under1000">Do 1.000 €</option>
+                  <option value="1000to2000">1.000–2.000 €</option>
+                  <option value="2000to3500">2.000–3.500 €</option>
+                  <option value="over3500">Več kot 3.500 €</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="2">
+            <p class="step-label">3. korak od 4</p>
+            <h3>Toplotna zaščita in elektrika</h3>
+            <div class="field-grid">
+              <label>Izolacija fasade
+                <select name="insulation" required>
+                  <option value="">Izberite</option>
+                  <option value="good">Dobro izolirana</option>
+                  <option value="partial">Delno izolirana</option>
+                  <option value="none">Brez dodatne izolacije</option>
+                  <option value="unknown">Ne vem</option>
+                </select>
+              </label>
+              <label>Okna
+                <select name="windows" required>
+                  <option value="">Izberite</option>
+                  <option value="modern">Večinoma novejša, energijsko učinkovita</option>
+                  <option value="mixed">Delno zamenjana</option>
+                  <option value="old">Večinoma starejša</option>
+                  <option value="unknown">Ne vem</option>
+                </select>
+              </label>
+              <label>Trifazni električni priključek
+                <select name="threePhase" required>
+                  <option value="">Izberite</option>
+                  <option value="yes">Da</option>
+                  <option value="no">Ne</option>
+                  <option value="unknown">Ne vem</option>
+                </select>
+              </label>
+              <label>Na voljo je prostor za zunanjo in notranjo enoto
+                <select name="space" required>
+                  <option value="">Izberite</option>
+                  <option value="yes">Da</option>
+                  <option value="probably">Verjetno</option>
+                  <option value="no">Ne / zelo omejeno</option>
+                  <option value="unknown">Ne vem</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="3">
+            <p class="step-label">4. korak od 4</p>
+            <h3>Vaš načrt investicije</h3>
+            <div class="field-grid">
+              <label>Kdaj želite izvesti projekt?
+                <select name="timeline" required>
+                  <option value="">Izberite</option>
+                  <option value="0to3">V naslednjih 3 mesecih</option>
+                  <option value="3to6">V 3–6 mesecih</option>
+                  <option value="6to12">V 6–12 mesecih</option>
+                  <option value="research">Za zdaj zbiram informacije</option>
+                </select>
+              </label>
+              <label>Okvirni proračun
+                <select name="budget" required>
+                  <option value="">Izberite</option>
+                  <option value="under5000">Do 5.000 €</option>
+                  <option value="5000to8000">5.000–8.000 €</option>
+                  <option value="8000to12000">8.000–12.000 €</option>
+                  <option value="over12000">Več kot 12.000 €</option>
+                  <option value="unknown">Potrebujem usmeritev</option>
+                </select>
+              </label>
+              <label>Glavni razlog za menjavo
+                <select name="motivation" required>
+                  <option value="">Izberite</option>
+                  <option value="cost">Nižji stroški ogrevanja</option>
+                  <option value="replacement">Obstoječa naprava je dotrajana</option>
+                  <option value="comfort">Več udobja in manj dela</option>
+                  <option value="environment">Okoljski razlogi</option>
+                  <option value="other">Drugo</option>
+                </select>
+              </label>
+              <label>Želite pomoč pri razumevanju subvencij?
+                <select name="subsidy" required>
+                  <option value="">Izberite</option>
+                  <option value="yes">Da</option>
+                  <option value="no">Ne</option>
+                  <option value="unknown">Nisem prepričan/-a</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <div class="form-error" id="formError" role="alert"></div>
+          <div class="form-actions">
+            <button type="button" class="button button-secondary" id="backBtn" disabled>Nazaj</button>
+            <button type="button" class="button" id="nextBtn">Naprej</button>
+            <button type="submit" class="button hidden" id="submitBtn">Prikaži rezultat</button>
+          </div>
+        </form>
+      </div>
+
+      <section id="resultPanel" class="result-panel hidden" aria-live="polite">
+        <div class="result-main">
+          <p class="eyebrow">Vaša predhodna ocena</p>
+          <div class="result-score-row">
+            <div class="score-ring large"><span id="scoreValue">0</span><small>/ 100</small></div>
+            <div><p class="result-level" id="resultLevel"></p><h3 id="resultTitle"></h3></div>
+          </div>
+          <p id="resultDescription"></p>
+          <div class="result-columns">
+            <div><h4>Dobri izhodiščni pogoji</h4><ul id="positiveList"></ul></div>
+            <div><h4>Pred ponudbo preverite</h4><ul id="considerationList"></ul></div>
+          </div>
+          <div class="disclaimer"><strong>Pomembno:</strong> Ocena je informativna in temelji izključno na vaših odgovorih. Ne nadomešča energetskega izračuna, ogleda objekta, projektiranja ali strokovnega nasveta.</div>
+        </div>
+
+        <div class="contact-card">
+          <p class="eyebrow">Naslednji korak</p>
+          <h3>Želite primerjavo do treh primernih izvajalcev?</h3>
+          <p>Vaše podatke bomo posredovali le izvajalcem, ki ustrezajo lokaciji in vrsti projekta, ter samo z vašim izrecnim soglasjem.</p>
+          <form id="contactForm">
+            <label>Ime in priimek<input name="fullName" autocomplete="name" required /></label>
+            <label>E-pošta<input name="email" type="email" autocomplete="email" required /></label>
+            <label>Telefon<input name="phone" type="tel" autocomplete="tel" required /></label>
+            <label class="checkbox-label"><input name="consentProviders" type="checkbox" required /><span>Soglašam, da EnergoIzbira moje podatke in odgovore iz ocene posreduje največ trem izbranim izvajalcem zaradi priprave ponudbe in kontakta.</span></label>
+            <label class="checkbox-label"><input name="consentPrivacy" type="checkbox" required /><span>Prebral/-a sem informacijo o obdelavi osebnih podatkov in razumem, da lahko soglasje kadarkoli prekličem.</span></label>
+            <button class="button" type="submit">Pošlji povpraševanje</button>
+            <p class="microcopy">Pred pošiljanjem v produkcijo je treba dodati končno politiko zasebnosti, podatke upravljavca in dejanski sistem za varno oddajo.</p>
+          </form>
+          <div id="demoConfirmation" class="demo-confirmation hidden"></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="izvajalci" class="provider-section">
+      <div class="section-shell provider-grid">
+        <div>
+          <p class="eyebrow">Za izvajalce toplotnih črpalk</p>
+          <h2>Manj praznih povpraševanj. Več informacij pred prvim klicem.</h2>
+          <p>Prejmite strukturirane priložnosti z lokacijo, objektom, obstoječim ogrevanjem, časovnico, proračunom in izrecnim dovoljenjem za kontakt.</p>
+        </div>
+        <div class="provider-offer">
+          <span>Za izvajalce</span>
+          <h3>Prejmite kvalificirana povpraševanja</h3>
+          <p>Plačilo samo za sprejeto kvalificirano povpraševanje. Neveljaven ali nedosegljiv kontakt se ne zaračuna.</p>
+          <a class="button button-light" href="mailto:partnerji@energoizbira.si?subject=Partnerstvo%20EnergoIzbira">Postanite partner</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-shell">
+      <div class="section-heading narrow"><p class="eyebrow">Pogosta vprašanja</p><h2>Jasno že pred začetkom</h2></div>
+      <details><summary>Ali EnergoIzbira prodaja toplotne črpalke?</summary><p>Ne. EnergoIzbira je informacijska in povezovalna platforma. Končno rešitev, napravo, ceno in izvedbo določi izbrani izvajalec.</p></details>
+      <details><summary>Ali rezultat zagotavlja, da je toplotna črpalka primerna?</summary><p>Ne. Rezultat je začetna usmeritev na podlagi vnesenih podatkov. Za končno odločitev so potrebni strokovni ogled, izračun toplotnih izgub in preverba sistema.</p></details>
+      <details><summary>Komu bodo poslani moji podatki?</summary><p>Samo izvajalcem, ki so primerni glede na lokacijo in projekt, največ trem, in le po vašem izrecnem soglasju.</p></details>
+      <details><summary>Kako je storitev brezplačna?</summary><p>Izvajalci lahko platformi plačajo za kvalificirano priložnost. To ne spremeni vaše cene in ne pomeni, da morate ponudbo sprejeti.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-grid">
+      <div><a class="brand brand-light" href="#top"><span class="brand-mark"><span></span></span><span>EnergoIzbira</span></a><p>Pametnejši prvi korak pri energijski prenovi doma.</p></div>
+      <div><strong>Pravno</strong><a href="#">Politika zasebnosti</a><a href="#">Pogoji uporabe</a><a href="#">Piškotki</a></div>
+      <div><strong>Kontakt</strong><span>Podatki podjetja bodo dodani pred objavo.</span></div>
+    </div>
+    <div class="section-shell footer-bottom"><span>© 2026 EnergoIzbira — delovni prototip</span><span>Informativna platforma, ne energetsko svetovanje.</span></div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
