@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Preverite, ali je toplotna črpalka smiselna za vaš dom, katere dejavnike morate preveriti in kako se pripraviti na ponudbe izvajalcev." />
-  <title>EnergoIzbira — Pametnejša odločitev za energijsko prenovo doma</title>
+  <meta name="description" content="Preverite, ali je toplotna črpalka smiselna za vašo nepremičnino, in poiščite najprimernejše izvajalce na svojem območju kjerkoli v Sloveniji." />
+  <title>EnergoIzbira — Pametnejša odločitev za energijsko prenovo nepremičnine</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,17 +15,17 @@
     </a>
     <nav aria-label="Glavna navigacija">
       <a href="#kako-deluje">Kako deluje</a>
-      <a href="#ocena">Ocena doma</a>
+      <a href="#ocena">Ocena nepremičnine</a>
       <a href="#izvajalci">Za izvajalce</a>
     </nav>
-    <a class="button button-small" href="#ocena">Preveri svoj dom</a>
+    <a class="button button-small" href="#ocena">Preveri svojo nepremičnino</a>
   </header>
 
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">Neodvisna začetna usmeritev za lastnike hiš</p>
-        <h1>Je toplotna črpalka prava izbira za vaš dom?</h1>
+        <p class="eyebrow">Brezplačna in neodvisna začetna usmeritev po vsej Sloveniji</p>
+        <h1>Je toplotna črpalka prava izbira za vašo nepremičnino?</h1>
         <p class="hero-lead">V nekaj minutah preverite ključne pogoje, odkrijte morebitne ovire in se bolje pripravite na pogovor z izvajalci.</p>
         <div class="hero-actions">
           <a class="button" href="#ocena">Začni brezplačno oceno</a>
@@ -40,7 +40,7 @@
       <div class="hero-card" aria-label="Primer rezultata ocene">
         <div class="card-topline"><span>Predhodna ocena</span><span class="status-dot">Obetavno</span></div>
         <div class="score-ring"><span>82</span><small>/ 100</small></div>
-        <h2>Vaš dom ima dobre izhodiščne pogoje.</h2>
+        <h2>Vaša nepremičnina ima dobre izhodiščne pogoje.</h2>
         <ul>
           <li>Delna izolacija stavbe</li>
           <li>Radiatorsko ogrevanje zahteva preverbo temperature</li>
@@ -52,20 +52,20 @@
 
     <section class="proof-strip">
       <div><strong>1</strong><span>strukturirana ocena</span></div>
-      <div><strong>3</strong><span>največ primerni izvajalci</span></div>
-      <div><strong>0 €</strong><span>za lastnika doma</span></div>
+      <div><strong>do 3</strong><span>najprimernejši izvajalci</span></div>
+      <div><strong>0 €</strong><span>za lastnika nepremičnine</span></div>
     </section>
 
     <section id="kako-deluje" class="content-section section-shell">
       <div class="section-heading">
         <p class="eyebrow">Od vprašanj do naslednjega koraka</p>
         <h2>Najprej razumevanje. Nato ponudbe.</h2>
-        <p>Ne pošljemo le telefonske številke več podjetjem. Najprej zberemo podatke, ki pomagajo razumeti vaš dom in pripravljenost projekta.</p>
+        <p>Ne pošljemo le telefonske številke več podjetjem. Najprej zberemo podatke, ki pomagajo razumeti vašo nepremičnino in pripravljenost projekta.</p>
       </div>
       <div class="steps-grid">
-        <article><span>01</span><h3>Opišete svoj dom</h3><p>Velikost, leto gradnje, ogrevanje, izolacija, okna in način oddajanja toplote.</p></article>
+        <article><span>01</span><h3>Opišete svojo nepremičnino</h3><p>Velikost, leto gradnje, ogrevanje, izolacija, okna in način oddajanja toplote.</p></article>
         <article><span>02</span><h3>Prejmete začetno oceno</h3><p>Prikažemo prednosti, možne ovire in vprašanja, ki jih morate postaviti izvajalcu.</p></article>
-        <article><span>03</span><h3>Izberete naslednji korak</h3><p>Rezultat lahko obdržite zase ali zaprosite za stik z največ tremi ustreznimi izvajalci.</p></article>
+        <article><span>03</span><h3>Izberete naslednji korak</h3><p>Rezultat lahko obdržite zase ali zaprosite za stik z največ tremi najprimernejšimi izvajalci.</p></article>
       </div>
     </section>
 
@@ -86,7 +86,7 @@
     <section id="ocena" class="assessment-section section-shell">
       <div class="section-heading narrow">
         <p class="eyebrow">Brezplačna predhodna ocena</p>
-        <h2>Preverite izhodiščne pogoje svojega doma</h2>
+        <h2>Preverite izhodiščne pogoje svoje nepremičnine</h2>
         <p>Izpolnjevanje traja približno tri minute. Za prikaz rezultata kontaktni podatki niso potrebni.</p>
       </div>
 
@@ -97,7 +97,7 @@
           <ol id="stepList">
             <li class="active">Nepremičnina</li>
             <li>Ogrevanje</li>
-            <li>Stanje doma</li>
+            <li>Stanje nepremičnine</li>
             <li>Načrt investicije</li>
           </ol>
         </aside>
@@ -109,6 +109,9 @@
             <div class="field-grid">
               <label>Poštna številka
                 <input name="postcode" inputmode="numeric" maxlength="4" placeholder="npr. 8250" required />
+              </label>
+              <label>Občina ali najbližji kraj
+                <input name="municipality" autocomplete="address-level2" placeholder="npr. Brežice" required />
               </label>
               <label>Vrsta nepremičnine
                 <select name="propertyType" required>
@@ -306,16 +309,16 @@
 
         <div class="contact-card">
           <p class="eyebrow">Naslednji korak</p>
-          <h3>Želite primerjavo do treh primernih izvajalcev?</h3>
-          <p>Vaše podatke bomo posredovali le izvajalcem, ki ustrezajo lokaciji in vrsti projekta, ter samo z vašim izrecnim soglasjem.</p>
+          <h3>Želite, da poiščemo najprimernejše izvajalce za vaš projekt?</h3>
+          <p>Na podlagi vaše poštne številke, občine in vrste projekta bomo preverili, kateri izvajalci so na voljo na vašem območju. Podatke posredujemo največ trem izbranim izvajalcem, ki najbolje ustrezajo vaši lokaciji in projektu, ter samo z vašim izrecnim soglasjem.</p>
           <form id="contactForm">
             <label>Ime in priimek<input name="fullName" autocomplete="name" required /></label>
             <label>E-pošta<input name="email" type="email" autocomplete="email" required /></label>
             <label>Telefon<input name="phone" type="tel" autocomplete="tel" required /></label>
-            <label class="checkbox-label"><input name="consentProviders" type="checkbox" required /><span>Soglašam, da EnergoIzbira moje podatke in odgovore iz ocene posreduje največ trem izbranim izvajalcem zaradi priprave ponudbe in kontakta.</span></label>
+            <label class="checkbox-label"><input name="consentProviders" type="checkbox" required /><span>Soglašam, da EnergoIzbira moje podatke in odgovore iz ocene posreduje največ trem izbranim izvajalcem, ki ustrezajo moji lokaciji in vrsti projekta, zaradi priprave ponudbe in kontakta.</span></label>
             <label class="checkbox-label"><input name="consentPrivacy" type="checkbox" required /><span>Prebral/-a sem informacijo o obdelavi osebnih podatkov in razumem, da lahko soglasje kadarkoli prekličem.</span></label>
             <button class="button" type="submit">Pošlji povpraševanje</button>
-            <p class="microcopy">Pred pošiljanjem v produkcijo je treba dodati končno politiko zasebnosti, podatke upravljavca in dejanski sistem za varno oddajo.</p>
+            <p class="microcopy">Podatke uporabimo izključno za obravnavo povpraševanja in povezavo z izbranimi izvajalci.</p>
           </form>
           <div id="demoConfirmation" class="demo-confirmation hidden"></div>
         </div>
@@ -342,18 +345,19 @@
       <div class="section-heading narrow"><p class="eyebrow">Pogosta vprašanja</p><h2>Jasno že pred začetkom</h2></div>
       <details><summary>Ali EnergoIzbira prodaja toplotne črpalke?</summary><p>Ne. EnergoIzbira je informacijska in povezovalna platforma. Končno rešitev, napravo, ceno in izvedbo določi izbrani izvajalec.</p></details>
       <details><summary>Ali rezultat zagotavlja, da je toplotna črpalka primerna?</summary><p>Ne. Rezultat je začetna usmeritev na podlagi vnesenih podatkov. Za končno odločitev so potrebni strokovni ogled, izračun toplotnih izgub in preverba sistema.</p></details>
-      <details><summary>Komu bodo poslani moji podatki?</summary><p>Samo izvajalcem, ki so primerni glede na lokacijo in projekt, največ trem, in le po vašem izrecnem soglasju.</p></details>
+      <details><summary>Komu bodo poslani moji podatki?</summary><p>Najprej preverimo razpoložljivost izvajalcev glede na vašo lokacijo in projekt. Podatke nato posredujemo največ trem izbranim izvajalcem, ki najbolje ustrezajo vaši lokaciji in projektu, ter le po vašem izrecnem soglasju.</p></details>
+      <details><summary>Ali je storitev na voljo po vsej Sloveniji?</summary><p>Predhodno oceno lahko izpolnite kjerkoli v Sloveniji. Razpoložljivost izvajalcev preverimo glede na poštno številko, občino in vrsto projekta; v posameznih območjih se mreža izvajalcev še širi.</p></details>
       <details><summary>Kako je storitev brezplačna?</summary><p>Izvajalci lahko platformi plačajo za kvalificirano priložnost. To ne spremeni vaše cene in ne pomeni, da morate ponudbo sprejeti.</p></details>
     </section>
   </main>
 
   <footer>
     <div class="section-shell footer-grid">
-      <div><a class="brand brand-light" href="#top"><span class="brand-mark"><span></span></span><span>EnergoIzbira</span></a><p>Pametnejši prvi korak pri energijski prenovi doma.</p></div>
+      <div><a class="brand brand-light" href="#top"><span class="brand-mark"><span></span></span><span>EnergoIzbira</span></a><p>Pametnejši prvi korak pri energijski prenovi nepremičnine.</p></div>
       <div><strong>Pravno</strong><a href="#">Politika zasebnosti</a><a href="#">Pogoji uporabe</a><a href="#">Piškotki</a></div>
-      <div><strong>Kontakt</strong><span>Podatki podjetja bodo dodani pred objavo.</span></div>
+      <div><strong>Kontakt</strong><a href="mailto:partnerji@energoizbira.si">partnerji@energoizbira.si</a></div>
     </div>
-    <div class="section-shell footer-bottom"><span>© 2026 EnergoIzbira — delovni prototip</span><span>Informativna platforma, ne energetsko svetovanje.</span></div>
+    <div class="section-shell footer-bottom"><span>© 2026 EnergoIzbira</span><span>Informativna platforma, ne energetsko svetovanje.</span></div>
   </footer>
 
   <script src="app.js"></script>
